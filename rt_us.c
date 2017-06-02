@@ -25,11 +25,11 @@ void Mdl_DOR_Init(void)
     Mdl_DOR_s.o_Omg[0] = 0;
     Mdl_DOR_s.o_Omg[1] = 0;
     Mdl_DOR_s.o_Omg[2] = 0;
-    Mdl_DOR_s.o_Quat[0] = 1;
+ /*   Mdl_DOR_s.o_Quat[0] = 1;
     Mdl_DOR_s.o_Quat[1] = 0;
     Mdl_DOR_s.o_Quat[2] = 0;
     Mdl_DOR_s.o_Quat[3] = 0;
-    Mdl_DOR_s.o_y[0] = 1;
+  */  Mdl_DOR_s.o_y[0] = 1;
     Mdl_DOR_s.o_y[1] = 0;
     Mdl_DOR_s.o_y[2] = 0;
     Mdl_DOR_s.o_y[3] = 0;

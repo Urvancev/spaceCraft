@@ -12,8 +12,8 @@
 int step=0;
 double deg = 180;
 double S_old[3];
-int st0 = -1;
-int st1 = -1;
+int st0 = 1;
+int st1 = 1;
 double E_error[3];
 
 double omg_old[3];
@@ -24,17 +24,17 @@ int sun_fail;
 int P_Sun_O(double S[3],double w_pro[3],unsigned short Sun,double omg[3])
 {
     //printf("step = %d \n ",step);
-    int i;
+  /*  int i;
     for(i = 0; i < 3; i++) {
        // S_old[i] = S[i];
         E_error[i] += S[i];
-    }
+    }*/
     switch(step){
         case 3:
-            if (seq >= 5) {
+  /*          if (seq >= 5) {
                 seq = 0;
                 if (( fabs(S[0]) -fabs(S_old[0]) > 0) && (fabs(omg_old[1]) < fabs(omg[1])) && omg_old[1]*omg[1] > 0) {
-                    printf("%7.3f < %7.3f\n",fabs(omg_old[1]*(180/M_PI)),fabs(omg[1]*(180/M_PI)));
+                //    printf("%7.3f < %7.3f\n",fabs(omg_old[1]*(180/M_PI)),fabs(omg[1]*(180/M_PI)));
 
                     if (st1 == 1 && seq1 >= 5) {
                         st1 = -1;
@@ -46,7 +46,7 @@ int P_Sun_O(double S[3],double w_pro[3],unsigned short Sun,double omg[3])
                     seq1++;
                 }
                 if (( fabs(S[1]) -fabs(S_old[1]) > 0) && (fabs(omg_old[0]) < fabs(omg[0]))&& omg_old[1]*omg[1] > 0) {
-                    printf("0:s %7.3f < %7.3f || w %7.3f < %7.3f\n",fabs(S_old[1]),fabs(S[1]),fabs(omg_old[0]*(180/M_PI)),fabs(omg[0]*(180/M_PI)));
+                  //  printf("0:s %7.3f < %7.3f || w %7.3f < %7.3f\n",fabs(S_old[1]),fabs(S[1]),fabs(omg_old[0]*(180/M_PI)),fabs(omg[0]*(180/M_PI)));
 
                     if (st0 == 1 && seq0 >= 5){
                         seq0 = 0;
@@ -66,7 +66,7 @@ int P_Sun_O(double S[3],double w_pro[3],unsigned short Sun,double omg[3])
                 }
             }
             seq++;
-
+*/
             w_pro[0] = 0;
             w_pro[1] = 0;
             w_pro[2] = 0;

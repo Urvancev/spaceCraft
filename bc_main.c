@@ -123,7 +123,7 @@ void* bcmain() {
         }
         //bc_time.Mls+=100;
         time_tick(&bc_time);
-        printf("mls = %d\n",bc_time.Mls);
+        //printf("mls = %d\n",bc_time.Mls);
         pthread_mutex_unlock(&mutex);
 
 

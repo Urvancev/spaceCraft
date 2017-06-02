@@ -125,9 +125,9 @@ int main() {
     model.M_o_Omg[1] = 0*M_PI/180;
     model.M_o_Omg[2] = 0*M_PI/180;
 
-    model.S_i[0] = 1;
+    model.S_i[0] = 0;
     model.S_i[1] = 0;
-    model.S_i[2] = 0;
+    model.S_i[2] = 1;
 
     double Mod;
     Mod = sqrt(model.S_i[0] * model.S_i[0] + model.S_i[1] * model.S_i[1] + model.S_i[2] * model.S_i[2]);
@@ -142,8 +142,8 @@ int main() {
 
     model.o_Quat[0] = 0.7071;
     model.o_Quat[1] = 0;
-    model.o_Quat[2] = 0;
-    model.o_Quat[3] = 0.7071;
+    model.o_Quat[2] = -0.7071;
+    model.o_Quat[3] = 0;
 
     printf("start\n");
   //  fd = TCP_Server_init(9012,"127.0.0.1");
